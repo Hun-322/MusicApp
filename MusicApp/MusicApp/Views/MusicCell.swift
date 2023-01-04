@@ -32,12 +32,12 @@ class MusicCell: UITableViewCell {
     // 스토리보드 또는 xib으로 만들때, 사용하게 도니느 생정자 코드
     override func awakeFromNib() {
         super.awakeFromNib()
+        mainImageView.contentMode = .scaleToFill
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
-        mainImageView.contentMode = .scaleToFill
     }
     
     private func loadImage() {

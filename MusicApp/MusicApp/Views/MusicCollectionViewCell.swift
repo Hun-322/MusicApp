@@ -2,14 +2,15 @@
 //  MusicCollectionViewCell.swift
 //  MusicApp
 //
-//  Created by KSH on 2022/12/29.
+//  Created by KSH on 2023/01/03.
 //
 
 import UIKit
 
 class MusicCollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var mainImageView: UIImageView!
     
-    @IBOutlet private weak var mainImageView: UIImageView!
     
     // 이미지 URL을 전달받는 속성
     var imageUrl: String? {
